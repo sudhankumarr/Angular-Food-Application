@@ -1,0 +1,19 @@
+{
+	"items": [{
+		"name": "Mango Juice",
+		"qty": 12,
+		"price": 35
+	}, {
+		"name": "Orange Juice",
+		"qty": 5,
+		"price": 40
+	}, {
+		"name": "Apple Juice",
+		"qty": 7,
+		"price": 50
+	}, {
+		"name": "Mosambi Juice",
+		"qty": 8,
+		"price": 60
+	}]
+}

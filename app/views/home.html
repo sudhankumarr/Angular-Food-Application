@@ -1,0 +1,19 @@
+<!--Home section -->
+<section class="home-section">
+	<div class="container">
+		<div class="row home-header">
+		    <h3>Please select restaurants</h3>
+		</div>
+		<div class="row search-wrapper">
+			<input type="text" class="search-restaurants" placeholder="Search Location"/>
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</div>
+		<ul class="row restaurant-list">
+			<li class="col-xs-12 col-sm-6" ng-repeat="shop in shopDetails">
+				<a ng-href="{{shop.linkUrl}}" class="restaurant">
+					<img ng-src="{{shop.imageUrl}}"/>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>

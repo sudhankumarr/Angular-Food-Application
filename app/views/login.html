@@ -1,0 +1,38 @@
+<!--Login-->
+<section class="login-section">
+  <div class="container">
+
+    <form name="loginForm" class="user-form" id="login-form" ng-submit="loginSubmit()">
+      <div class="row">
+        <button class="register-btn" ng-click="goView('register')">new user registration</button>
+      </div>
+
+      <div class="row user-form-header">
+        <h3>user login</h3>
+        <span class="mandatory" ng-show="loginForm.username.$error.required || loginForm.password.$error.required">Fields marked with asterisk (*) are mandatory</span>
+      </div>
+
+      <p class="row error-msg" ng-show="loginFormError">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span>{{loginError.message}}</span>
+      </p>
+
+      <div class="row form-field">
+        <label for="login-username" class="col-xs-12">username<sup ng-show="loginForm.username.$error.required">*</sup></label>
+        <input type="text" name="username" class="login-username col-xs-12" ng-model="login.username" required/>
+      </div>
+
+      <div class="row form-field">
+        <label for="login-passord" class="col-xs-12">password<sup ng-show="loginForm.password.$error.required">*</sup></label>
+        <input type="password" name="password" class="login-password col-xs-12" ng-model="login.password" required/>
+      </div>
+
+      <div class="row form-field">
+        <input type="submit" class="login-btn" value="Login" ng-disabled="loginForm.$invalid"/>
+        <!-- <button class="login-btn" ng-disabled="login-form.$invalid">Login</button> -->
+      </div>
+    </form>
+
+  </div>
+</section>
+<!--end Login-->

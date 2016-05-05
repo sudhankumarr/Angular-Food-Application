@@ -1,0 +1,19 @@
+{
+	"items": [{
+		"name": "Samosa Chat",
+		"qty": 5,
+		"price": 20
+	}, {
+		"name": "Masala Puri",
+		"qty": 10,
+		"price": 15
+	}, {
+		"name": "Kachodi Chat",
+		"qty": 6,
+		"price": 25
+	}, {
+		"name": "Pani Poori",
+		"qty": 8,
+		"price": 30
+	}]
+}

@@ -1,0 +1,42 @@
+<!-- Menu Item -->
+<section class="menu-item-section">
+	<div class="container">
+		<div class="row menu-header">
+		    <h3>{{shopName}}</h3>
+		</div>
+		<form class="checkout-form">
+			<div class="row search-wrapper">
+				<input type="text" class="search-restaurants" placeholder="Search Menu" ng-model="query"/>
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			</div>
+			<ul>
+				<li class="row" ng-repeat="item in shopItems | filter:query track by $index">
+					<div class="col-xs-4 item-name">
+						{{item.name}}
+					</div>
+					<div class="col-xs-4 quantity">
+						<select ng-model="selectQty"
+								ng-options="i as i for i in item.qtyArray"
+								ng-change="selectItems(item,selectQty)"
+								ng-init="selectQty=item.qtyArray[0]; initMenuItems(item)">
+							<!-- <option ng-repeat="i in item.qtyArray" value="{{i}}">{{i}}</option> -->
+						</select>
+					</div>
+					<div class="col-xs-4 item-price">
+						{{item.price | currency: "Rs "}}
+					</div>
+				</li>
+			</ul>
+			<div class="clearfix">
+				<div class="total-price">
+					<span>Total Value</span>
+					<span>{{totalPrice | currency: "Rs "}}</span>
+				</div>
+			</div>
+
+			<input type="submit" ng-class="(totalPrice==0)?'disabled':'show'" value="checkout" ng-click="storeOrder()"/>
+		</form>
+
+	</div>
+</section>
+<!-- end Menu Item -->

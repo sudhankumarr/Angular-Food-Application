@@ -1,0 +1,136 @@
+/*Login Section*/
+.login-section .register-btn {
+  float: right;
+  width: 161px;
+  height: 24px;
+  font-size: 14px;
+  color: #FFF;
+  text-transform: capitalize;
+  background-color: #C3C3C3;
+  border: 1px solid #8C8B8B;
+  margin: 0;
+}
+.user-form .user-form-header {
+  height: 46px;
+  background-color: #DA5421;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.user-form-header h3 {
+	color: #FFF;
+	font-size: 14px;
+	text-transform: capitalize;
+	margin: 0;
+	/*vertically center*/
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	/*vertically center*/
+}
+.user-form-header .mandatory {
+	position: absolute;
+	bottom: -30px;
+	right: 20px;
+	left: 20px;
+	color: #CB4D3C;
+	margin-top: 20px;
+	font-size: 12px;
+}
+.user-form {
+	margin: 0;
+}
+.user-form .form-field {
+	margin-bottom: 20px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.user-form .form-field label {
+	color: #9C9998;
+	font-size: 15px;
+	font-weight: normal;
+	text-transform: capitalize;
+	padding: 0;
+}
+.user-form .form-field input {
+	border: 1px solid #9C9998;
+	height: 40px;
+}
+.user-form .form-field .login-btn, .user-form .form-field .cancel-btn, .user-form .form-field .register-btn {
+	color: #FFF;
+	font-size: 15px;
+	background-color: #76B252;
+	width: 49%;
+	height: 40px;
+}
+.user-form .form-field .login-btn {
+	float: right;
+}
+input[disabled].login-btn,  input[disabled].register-btn {
+	opacity: 0.65;
+	cursor: not-allowed;
+}
+.error-msg {
+	color: #CB4D3C;
+	font-size: 15px;
+	padding: 10px 20px;
+	border: 1px solid #CB4D3C;
+	width: 100%;
+	margin: 20px auto;
+}
+.error-msg .glyphicon {
+	margin: 0 10px 0 0;
+}
+sup {
+  margin-left: 10px;
+  color: #CB4D3C;
+}
+/*End Login Section*/
+
+@media screen and (min-width: 768px) {
+	.login-section .register-btn {
+		width: 260px;
+		height: 38px;
+		font-size: 18px;
+		margin: 0 0 10px 0;
+	}
+	.user-form {
+		margin: 0 -15px 0 -15px;
+	}
+	.user-form .user-form-header {
+		height: 93px;
+		margin-bottom: 20px;
+	}
+	.user-form-header h3 {
+		font-size: 22px;
+	}
+	.user-form-header .mandatory {
+		bottom: 10px;
+		right: 20px;
+		left: auto;
+		color: #FFF;
+		font-size: 14px;
+	}
+	.user-form .form-field {
+		width: 668px;
+		margin-bottom: 30px;
+	}
+	.user-form .form-field label {
+		font-size: 22px;
+	}
+	.user-form .form-field input {
+		height: 64px;
+	}
+	.user-form .form-field .login-btn, .user-form .form-field .cancel-btn, .user-form .form-field .register-btn {
+		width: 270px;
+		height: 58px;
+		font-size: 22px;
+	}
+	.btn-wrapper {
+		float: right;
+	}
+	.error-msg {
+		width: 668px;
+	}
+}

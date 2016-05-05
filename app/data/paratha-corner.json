@@ -1,0 +1,19 @@
+{
+	"items": [{
+		"name": "Stuffed Paratha",
+		"qty": 10,
+		"price": 30
+	}, {
+		"name": "Normal Paratha",
+		"qty": 5,
+		"price": 40
+	}, {
+		"name": "Plain Paratha",
+		"qty": 7,
+		"price": 50
+	}, {
+		"name": "Tawa Paratha",
+		"qty": 8,
+		"price": 60
+	}]
+}

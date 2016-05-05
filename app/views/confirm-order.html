@@ -1,0 +1,52 @@
+<!--Menu Item -->
+<section class="confirm-order-section menu-item-section">
+	<div class="container">
+		<div class="row menu-header">
+		    <h3>{{details.shopName}}</h3>
+		</div>
+		<form class="checkout-form">
+			<!--Desktop view -->
+			<ul class="hidden-xs">
+				<li class="row" ng-repeat="item in finalItems track by item.name">
+					<div class="col-xs-4 item-name">
+						{{item.name}}
+					</div>
+					<div class="col-xs-4 quantity">
+						{{item.qty}}
+					</div>
+					<div class="col-xs-4 item-price">
+						{{item.price | currency: "Rs "}}
+					</div>
+				</li>
+			</ul>
+			<!--end Desktop view-->
+			<!--Mobile view-->
+			<ul class="visible-xs">
+				<li class="row" ng-repeat="item in finalItems track by item.name">
+					<div class="item-name">
+						<span>Item Name:</span>
+						<span> {{item.name}} </span>
+					</div>
+					<div class="quantity">
+						<span>Quantity:</span>
+						<span>{{item.qty}}</span>
+					</div>
+					<div class="item-price">
+						<span>Cost:</span>
+						<span>{{item.price}}</span>
+					</div>
+				</li>
+			</ul>
+			<!--end Mobile view-->
+			<div class="clearfix">
+				<div class="total-price">
+					<span>Total Value</span>
+					<span>{{details.totalPrice | currency: "Rs "}}</span>
+				</div>
+			</div>
+			<input type="submit" value="Confirm Order"/>
+		</form>
+
+	</div>
+</section>
+<!-- end Menu Item

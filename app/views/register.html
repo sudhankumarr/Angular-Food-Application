@@ -1,0 +1,46 @@
+<!--Register-->
+<section class="register-section">
+  <div class="container">
+
+    <form name="regForm" class="user-form" id="register-form" ng-submit="regSubmit()">
+      <div class="row user-form-header">
+        <h3>user registration</h3>
+        <span class="mandatory" ng-show="regForm.firstname.$error.required || regForm.lastname.$error.required || regForm.username.$error.required || regForm.password.$error.required">Fields marked with asterisk (*) are mandatory</span>
+      </div>
+
+      <p class="row error-msg" ng-show="regFormError">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span>{{regError.message}}</span>
+      </p>
+
+      <div class="row form-field">
+        <label for="register-firstname" class="col-xs-12">first name<sup ng-show="regForm.firstname.$error.required">*</sup></label>
+        <input type="text" name="firstname" class="register-firstname col-xs-12" ng-model="reg.firstname" required/>
+      </div>
+
+      <div class="row form-field">
+        <label for="register-lastname" class="col-xs-12">last name<sup ng-show="regForm.lastname.$error.required">*</sup></label>
+        <input type="text" name="lastname" class="register-lastname col-xs-12" ng-model="reg.lastname" required/>
+      </div>
+
+      <div class="row form-field">
+        <label for="register-username" class="col-xs-12">username<sup ng-show="regForm.username.$error.required">*</sup></label>
+        <input type="text" name="username" class="register-username col-xs-12" ng-model="reg.username" required/>
+      </div>
+
+      <div class="row form-field">
+        <label for="register-passord" class="col-xs-12">password<sup ng-show="regForm.password.$error.required">*</sup></label>
+        <input type="password" name="password" class="register-password col-xs-12" ng-model="reg.password" required/>
+      </div>
+
+      <div class="row form-field">
+        <div class="btn-wrapper">
+          <input type="button" class="cancel-btn" value="Cancel" ng-click="goView('login')"/>
+          <input type="submit" class="register-btn" value="Submit" ng-disabled="regForm.$invalid"/>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</section>
+<!--end Register-->
