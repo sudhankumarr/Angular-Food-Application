@@ -14,7 +14,7 @@ Please view the Wiki page for installation and tasks.
 1. The application contains five views: login, registration, Home page, Menu item page, confirm order page.
 2. Form validations are done. 
 3. Used HTML5 localStorage API for storing registered user details and ordered food items.
-4. The vendor details are fetched from JSON files usingg angular http service.
+4. The vendor details are fetched from JSON files using angular http service.
 
 # Application Workflow
 
