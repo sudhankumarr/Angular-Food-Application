@@ -5,8 +5,6 @@ version 0.15.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `grunt serve` for opening local server and view the application.
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+Please view the Wiki page for installation and tasks.
