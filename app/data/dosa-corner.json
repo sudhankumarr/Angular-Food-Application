@@ -1,0 +1,19 @@
+{
+	"items": [{
+		"name": "Onion Dosa",
+		"qty": 10,
+		"price": 40
+	}, {
+		"name": "Masala Dosa",
+		"qty": 5,
+		"price": 50
+	}, {
+		"name": "Rava Dosa",
+		"qty": 7,
+		"price": 35
+	}, {
+		"name": "Neer Dosa",
+		"qty": 8,
+		"price": 60
+	}]
+}

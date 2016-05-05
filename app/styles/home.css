@@ -1,0 +1,62 @@
+.home-section .home-header, .menu-item-section .menu-header {
+  height: 46px;
+  background-color: #DA5421;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.home-section .home-header h3, .menu-item-section .menu-header h3 {
+	color: #FFF;
+	font-size: 14px;
+	text-transform: capitalize;
+	margin: 0;
+	/*vertically center*/
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	/*vertically center*/
+}
+.home-section .search-wrapper, .menu-item-section .search-wrapper {
+	position: relative;
+}
+.home-section .search-restaurants, .menu-item-section .search-restaurants {
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+	font-size: 15px;
+	padding-left: 20px;
+}
+.home-section .glyphicon-search, .menu-item-section .glyphicon-search {
+	position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 20px;
+}
+ul.restaurant-list {
+	padding: 0;
+	list-style: none;
+}
+ul.restaurant-list li {
+	padding: 0;
+}
+ul.restaurant-list li a {
+	display: inline-block;
+	margin: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+	ul.restaurant-list li:nth-child(even) a {
+		float: right;
+	}
+	.home-section .home-header, .menu-item-section .menu-header {
+		height: 93px;
+	}
+	.home-section .home-header h3, .menu-item-section .menu-header h3 {
+		font-size: 22px;
+	}
+	.home-section .search-restaurants, .menu-item-section .search-restaurants {
+		font-size: 18px;
+		height: 64px;
+	}
+}

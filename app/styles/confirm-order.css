@@ -1,0 +1,45 @@
+.confirm-order-section.menu-item-section li {
+	border: 1px solid gray;
+	padding: 10px;
+	margin: 10px 0;
+}
+.confirm-order-section.menu-item-section li:hover {
+	background-color: #D9D9D9;
+}
+.confirm-order-section.menu-item-section li div {
+	text-align: left;
+}
+.confirm-order-section.menu-item-section li div span {
+	width: 48%;
+	display: inline-block;
+	text-align: left;
+	font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.confirm-order-section.menu-item-section ul {
+		list-style: none;
+		padding: 0;
+	}
+	.confirm-order-section.menu-item-section li {
+		border: none;
+		border-bottom: 2px solid #76B251;
+		padding: 20px 0;
+		margin: 0 -15px;
+	}
+	.confirm-order-section.menu-item-section li:hover {
+		background-color: #F0F7EC;
+	}
+	.confirm-order-section.menu-item-section .item-name {
+		color: #473535;
+		font-size: 15px;
+	}
+	.confirm-order-section.menu-item-section .quantity {
+		text-align: center;
+	}
+	.confirm-order-section.menu-item-section .item-price {
+		font-size: 20px;
+		color: #264811;
+		text-align: right;
+	}
+}
